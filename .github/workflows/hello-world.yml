@@ -7,4 +7,4 @@ jobs:
       - name: hello-world
         run: echo "Hello World! GithubActions works!"
       - name: make-lint
-        run: make lint
+        run: poetry run flake8 brain_games
