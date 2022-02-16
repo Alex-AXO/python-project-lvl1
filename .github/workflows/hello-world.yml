@@ -4,5 +4,7 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
+      - name: hello-world
         run: echo "Hello World! GithubActions works!"
+      - name: make-lint
+        run: make lint
