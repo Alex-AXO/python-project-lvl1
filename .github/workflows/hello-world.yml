@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: hello-world
         run: echo "Hello World! GithubActions works!"
+      - name: list-dir
+        run: ls -la
       - name: make-lint
         run: poetry run flake8 brain_games
