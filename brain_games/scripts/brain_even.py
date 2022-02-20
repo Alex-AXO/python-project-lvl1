@@ -9,14 +9,17 @@ def question():
     random_number = randint(1, 30)  # случайное число (включая крайние числа).
     print('Question:', random_number)
     answer = prompt.string('Your answer: ')
-    if random_number % 2 == 0 and answer == 'yes' or random_number % 2 != 0 and answer == 'no':
+    if random_number % 2 == 0 and answer == 'yes' or (
+        random_number % 2 != 0 and answer == 'no'
+    ):
         return 'Correct!'
     else:
         if random_number % 2 == 0:
             correct_answer = 'yes'
         else:
             correct_answer = 'no'
-        return f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'."
+        return f"'{answer}' is wrong answer ;(.\
+ Correct answer was '{correct_answer}'."
 
 
 def main():
