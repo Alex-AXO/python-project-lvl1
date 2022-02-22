@@ -7,12 +7,12 @@ from brain_games.games import common            # импорт модулей и
 def main():
     player_name = common.get_name()
     common.hello_name(player_name)
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('What is the result of the expression?')
 
     count = 0
     while count < 3:
         count += 1
-        result = common.question_even(player_name)
+        result = common.question_calc(player_name)
         if result == 'Correct!':
             print(result)
         else:
