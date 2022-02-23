@@ -6,12 +6,12 @@ from brain_games.games import common            # импорт модулей и
 def main():
     player_name = common.get_name()
     common.hello_name(player_name)
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+    print('Find the greatest common divisor of given numbers.')
 
     count = 0
     while count < 3:
         count += 1
-        result = common.question_even(player_name)
+        result = common.question_gcd(player_name)
         if result == 'Correct!':
             print(result)
         else:

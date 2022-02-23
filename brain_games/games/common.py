@@ -1,5 +1,7 @@
+
 import prompt
 from random import randint                      # случайные числа
+from math import gcd
 
 
 def get_name():
@@ -51,6 +53,18 @@ def question_calc(name):
         print(f'Question: {number1} * {number2}')
         right_answer = number1 * number2
     answer = prompt.string('Your answer: ')
+    if int(answer) == right_answer:
+        return 'Correct!'
+    else:
+        return incorrect_answer(answer, right_answer, name)
+
+
+def question_gcd(name):
+    number1 = randint(1, 100)
+    number2 = randint(1, 100)
+    print(f'Question: {number1} {number2}')
+    answer = prompt.string('Your answer: ')
+    right_answer = gcd(number1, number2)
     if int(answer) == right_answer:
         return 'Correct!'
     else:
