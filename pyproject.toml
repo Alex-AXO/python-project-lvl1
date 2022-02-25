@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "hexlet-code"
-version = "0.1.1"
+version = "0.1.2"
 description = "Первый проект на Хекслете — Игры разума."
 authors = ["Alex-AXO <kholopov.alexander@gmail.com>"]
 packages = [
@@ -16,6 +16,7 @@ brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
+brain-progression = "brain_games.scripts.brain_progression:main"
 
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
