@@ -11,4 +11,4 @@
 * brain-calc (step 6): <https://asciinema.org/a/mF1tAyw0MK0gK5xy37QbXmxHq>
 * brain-gcd (step 7): <https://asciinema.org/a/v4jWLwUTQuQS7bJXD6ldjtmXx>
 * brain-progression (step 8): <https://asciinema.org/a/0eC4SPihlaZSdFoenPJ14Uk4B>
-
+* brain-prime (step 9): <https://asciinema.org/a/o25V7enbKtWrbhGgUhMq5j32T>
