@@ -39,6 +39,17 @@ def result(answer, right_answer, name):
         return incorrect_answer(answer, right_answer, name)
 
 
+def is_prime(number):
+    if number < 2:
+        return 'no'
+    a = 2
+    while a <= int(number / 2):
+        if number % a == 0:
+            return 'no'
+        a += 1
+    return 'yes'
+
+
 # Логика игр
 
 
@@ -103,4 +114,15 @@ def question_progression(name):
         element += step
 
     answer = question_answer(progression)
+    return result(answer, right_answer, name)
+
+
+def question_prime(name):
+    number = randint(1, 100)
+    answer = question_answer(str(number))
+    # if is_prime(number):
+    #     right_answer = 'yes'
+    # else:
+    #     right_answer = 'no'
+    right_answer = is_prime(number)
     return result(answer, right_answer, name)
